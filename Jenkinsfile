@@ -28,7 +28,7 @@ pipeline{
         }
         stage("deploy the project on tomcat"){
             steps{
-                sh "sudo cp /opt/venu/workspace/pipeline/target/addressbook.war /home/ubuntu/apache-tomcat-9.0.100/webapps/"
+                sh "sudo mv /opt/venu/workspace/pipeline/target/addressbook.war /home/ubuntu/apache-tomcat-9.0.100/webapps/"
             }
         }
     }
